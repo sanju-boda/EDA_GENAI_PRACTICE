@@ -73,6 +73,13 @@ This generates three comprehensive reports:
 2. **ydata_report.html** - Detailed YData Profiling report
 3. Can also launch D-Tale dashboard
 
+### Run the Streamlit Dashboard
+```bash
+streamlit run app.py
+```
+
+This launches a Streamlit dashboard that embeds the generated EDA reports and provides an interactive dataset overview.
+
 ### Launch D-Tale Dashboard
 ```bash
 python launch_dtale.py
@@ -83,11 +90,11 @@ Opens an interactive web-based data explorer for dynamic analysis.
 ## 📂 Project Structure
 
 ```_PRACTICE/
+├── app.py                     # Streamlit dashboard app
 ├── automated_eda.py           # Main EDA report generator
 ├── generate_sales_data.py     # Sample synthetic data generator
 ├── launch_dtale.py            # Interactive dashboard launcher
 ├── requirements.txt           # Python dependencies
-├── sales_data.csv             # Sample demoies
 ├── sales_data.csv             # Generated sample dataset
 ├── sweetviz_report.html       # Sweetviz analysis output
 ├── ydata_report.html          # YData Profiling output
